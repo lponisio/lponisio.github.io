@@ -6,7 +6,18 @@
 <title>People | Ponisio Lab</title>
 <meta name="description" content="Ponisio Lab at the University of Oregon: ecological networks, pollinators, biodiversity, restoration, and open science.">
 <link rel="stylesheet" href="assets/css/style.css">
-<link rel="icon" href="https://www.ponisiolab.com/uploads/9/4/6/4/94640692/ponisiolab_orig.png">
+<link rel="icon" href="assets/images/logo.png">
+<style>
+  .person-with-photo { display:grid; grid-template-columns:112px minmax(0,1fr); gap:18px; align-items:start; }
+  .person-photo { width:112px; aspect-ratio:4 / 5; object-fit:cover; border-radius:8px; border:1px solid var(--line); background:white; }
+  .person-copy h3 { margin-top:0; }
+  .lab-gallery { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin:18px 0 34px; }
+  .lab-gallery figure { margin:0; background:white; border:1px solid var(--line); border-radius:9px; overflow:hidden; }
+  .lab-gallery img { display:block; width:100%; height:220px; object-fit:cover; background:#f2f4f7; }
+  .lab-gallery figcaption { padding:9px 12px 11px; color:var(--muted); font-size:.86rem; }
+  @media (max-width:860px) { .person-with-photo { grid-template-columns:92px minmax(0,1fr); } .person-photo { width:92px; } .lab-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+  @media (max-width:680px) { .person-with-photo { grid-template-columns:105px minmax(0,1fr); } .person-photo { width:105px; } .lab-gallery { grid-template-columns:1fr; } .lab-gallery img { height:auto; max-height:380px; object-fit:contain; } }
+</style>
 </head>
 <body>
 <header class="site-header"><div class="wrap header-inner">
@@ -22,7 +33,7 @@
 <p>Lauren studies how species interactions maintain biodiversity and how ecological mechanisms can be used to restore diversity in human-modified systems. Her work combines modeling, synthesis, and field ecology with a strong commitment to reproducible and open science.</p>
 <p>She earned her PhD at the University of California, Berkeley and her MS and BS at Stanford University. Her research has ranged from bee-friendly agricultural practices and pollinator community assembly to fire ecology, managed forests, disease, and long-term change in wild bee communities.</p>
 <div class="button-row"><a class="button" href="https://github.com/lponisio">GitHub</a><a class="button" href="https://scholar.google.com/citations?hl=en&user=r5CFqkMAAAAJ">Google Scholar</a><a class="button" href="https://orcid.org/0000-0002-3838-7357">ORCID</a></div>
-</div><div class="profile-card"><img src="https://www.ponisiolab.com/uploads/9/4/6/4/94640692/published/lauren-ponisio1.jpeg?1610395858=" alt="Lauren Ponisio doing field work"><p class="small muted">Field research in California.</p></div></section>
+</div><div class="profile-card"><img src="assets/images/member_lauren_ponisio.jpg" alt="Lauren Ponisio doing field work"><p class="small muted">Field research in California.</p></div></section>
 
 <h2>Current members</h2><div class="people-list">
 <div class="person">
@@ -32,24 +43,27 @@
 <p>She is also the lead workshop developer and facilitator for the Trans and Gender Non-conforming Field Alliance, offering a scenario-based field safety training to address the specific needs of LGBTQ+ researchers conducting field work. She successfully defended her dissertation in 2026 and is currently on the job market.</p>
 </div>
 
-<div class="person">
-<h3>Nicole Martínez-Llaurador</h3><div class="role">PhD student</div>
+<div class="person person-with-photo">
+<img class="person-photo" src="assets/images/member_nicole.jpg" alt="Nicole Martínez-Llaurador">
+<div class="person-copy"><h3>Nicole Martínez-Llaurador</h3><div class="role">PhD student</div>
 <p>Nicole's general interest is in ecological interactions, entomology, and botany. She is from Puerto Rico, where she studied the effects and changes in community dynamics on plant–pollinator interaction networks caused by hurricanes. Nicole is mainly interested in plant–pollinator interactions and how those interactions can be affected by different variables such as invasive species, natural disasters, and anthropogenic disturbances.</p>
-<p>She is also interested in how pollinators, as drivers of natural selection, can influence breeding systems in plants.</p>
+<p>She is also interested in how pollinators, as drivers of natural selection, can influence breeding systems in plants.</p></div>
 </div>
 
-<div class="person">
-<h3>Rose McDonald</h3><div class="role">PhD student</div>
+<div class="person person-with-photo">
+<img class="person-photo" src="assets/images/member_rose.jpg" alt="Rose McDonald">
+<div class="person-copy"><h3>Rose McDonald</h3><div class="role">PhD student</div>
 <p class="small"><a href="https://orcid.org/0009-0004-6274-562X">ORCID</a></p>
 <p>Rose joined the Ponisio Lab in Fall 2022 after working as a research technician at Montana State University, where she studied honey bee host–pathogen interactions. She previously worked as a field technician at the University of Wisconsin–Madison, analyzing the impact of landscape composition on wild bee populations. She received her bachelor's degrees in biology and history from UMass Amherst in 2021.</p>
-<p>For her PhD, Rose is reconstructing wild pollinator habitats within managed forests and is also interested in studying the underlying drivers of pathogen spread in wild bee communities.</p>
+<p>For her PhD, Rose is reconstructing wild pollinator habitats within managed forests and is also interested in studying the underlying drivers of pathogen spread in wild bee communities.</p></div>
 </div>
 
-<div class="person">
-<h3>Alejandro Santillana</h3><div class="role">PhD student</div>
+<div class="person person-with-photo">
+<img class="person-photo" src="assets/images/member_ale.jpg" alt="Alejandro Santillana">
+<div class="person-copy"><h3>Alejandro Santillana</h3><div class="role">PhD student</div>
 <p class="small"><a href="https://www.alejandrosantillana.com/">Website</a> · <a href="https://www.inaturalist.org/people/174073">iNaturalist</a></p>
 <p>Alejandro's research focuses on how environmental variation shapes plant–pollinator interactions across space and time. Using field-based sampling and network approaches, he investigates the relative roles of species turnover and interaction rewiring in driving network change, with the goal of understanding how mutualistic systems respond to environmental change.</p>
-<p>Alejandro's work encompasses plant–pollinator communities from high-elevation meadows in the southwestern U.S. (Sky Islands) and resurveyed sites in California, where communities are being sampled more than 50 years after the original surveys.</p>
+<p>Alejandro's work encompasses plant–pollinator communities from high-elevation meadows in the southwestern U.S. (Sky Islands) and resurveyed sites in California, where communities are being sampled more than 50 years after the original surveys.</p></div>
 </div>
 
 <div class="person">
@@ -95,6 +109,18 @@
 <div class="person"><h3>Julie Fowler</h3><div class="role">Field Technician · 2017</div></div>
 <div class="person"><h3><a href="https://pasquinellilab.biosci.ucsd.edu/people/">Hannah Lewack</a></h3><div class="role">Lab Manager · 2023–2024</div><p class="small">PhD candidate, UC San Diego</p></div>
 <div class="person"><h3><a href="https://orcid.org/0000-0003-4519-4198">Emanuelle L. S. Brito</a></h3><div class="role">Visiting PhD student · CAPES – UFG Brazil</div><p class="small">ORCID</p></div>
+</div>
+
+<h3 style="margin-top:38px">Lab through the years</h3>
+<p class="muted">A few snapshots of the lab across institutions, field seasons, and generations of students and researchers.</p>
+<div class="lab-gallery">
+<figure><img src="assets/images/lab_2026.jpg" alt="Ponisio Lab group photo, 2026"><figcaption>2026</figcaption></figure>
+<figure><img src="assets/images/lab_2023.jpg" alt="Ponisio Lab group photo, 2023"><figcaption>2023</figcaption></figure>
+<figure><img src="assets/images/lab_2022.jpg" alt="Ponisio Lab group photo, 2022"><figcaption>2022</figcaption></figure>
+<figure><img src="assets/images/lab_2020.jpg" alt="Ponisio Lab group photo, 2020"><figcaption>2020</figcaption></figure>
+<figure><img src="assets/images/lab_2019.jpg" alt="Ponisio Lab group photo, 2019"><figcaption>2019</figcaption></figure>
+<figure><img src="assets/images/lab_2018.jpg" alt="Ponisio Lab group photo, 2018"><figcaption>2018</figcaption></figure>
+<figure><img src="assets/images/lab_2017.jpg" alt="Ponisio Lab group photo, 2017"><figcaption>2017</figcaption></figure>
 </div>
 
 <p style="margin-top:32px"><a href="join.html">Interested in joining the lab? →</a></p>
